@@ -21,6 +21,7 @@ const config: Config = {
         primary: "#000000",
 
         background: "#0e1215",
+        backgroundUpper: "#14191d",
       },
     },
   },

@@ -9,14 +9,14 @@ const Navbar = () => {
   const [isToggleOpen, setIsToggleOpen] = useState(false);
   return (
     <>
-      <header className="bg-background fixed w-full p-[0.7rem] lg:p-[0.3rem]">
+      <header className="bg-background top-0 z-40 left-0 right-0  fixed w-full py-[0.7rem] lg:py-[0.3rem]">
         <div className="relative mx-auto max-w-full px-6 ">
           <nav
             aria-label="main navigation"
             className="flex  items-center justify-between font-medium text-white"
             role="navigation"
           >
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center  items-center">
               {/*      <!-- Brand logo --> */}
               <Link
                 href={"/"}
@@ -35,9 +35,9 @@ const Navbar = () => {
               <ul
                 role="menubar"
                 aria-label="Select page"
-                className={`absolute bg-background lg:ml-8 flex lg:gap-8 justify-center items-center left-0 top-0 z-[-1] w-full  overflow-hidden  overflow-y-auto overscroll-contain bg-neutral px-8 pb-12 pt-24 font-medium  lg:visible lg:relative lg:top-0  lg:z-0 lg:flex h-full lg:w-auto lg:items-stretch lg:overflow-visible lg:bg-white/0 lg:px-0 lg:py-0  lg:pt-0 lg:opacity-100 ${
+                className={`absolute bg-background lg:ml-8 flex lg:gap-8 justify-center items-center  z-[-1] w-full  overflow-hidden  overflow-y-auto overscroll-contain bg-neutral px-8 pb-12 pt-24 font-medium  lg:visible lg:relative lg:top-0  lg:z-0 lg:flex h-full lg:w-auto lg:items-stretch lg:overflow-visible lg:bg-white/0 lg:px-0 lg:py-0  lg:pt-0 lg:opacity-100 ${
                   isToggleOpen
-                    ? "visible opacity-100 transition-[opacity,visibility] duration-150 ease-linear backdrop-blur-sm flex flex-col justify-center items-center text-center"
+                    ? "visible opacity-100 min-h-[60dvh] absolute top-0  right-0    transition-[opacity,visibility] duration-150 ease-linear backdrop-blur-sm flex flex-col  justify-center items-center text-center"
                     : "invisible  opacity-0"
                 }`}
               >
@@ -76,7 +76,7 @@ const Navbar = () => {
             </div>
 
             <div className="ml-auto flex items-center px-6 lg:ml-0 lg:p-0">
-              <button className="py-2 px-3 bg-gradient-to-bl from-emerald-600 via-[#2dc972] to-emerald-600 rounded-full font-roboto font-medium ">
+              <button className="py-2 px-3 bg-gradient-to-bl from-emerald-600 via-[#2dc972] to-emerald-600 rounded-xl font-roboto font-medium ">
                 <span>Try it free</span>
               </button>
             </div>

@@ -3,3 +3,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.space-nav {
+  @apply mt-[4.1rem];
+}
