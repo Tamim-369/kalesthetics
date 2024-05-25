@@ -1,4 +1,13 @@
-import { CTA, Footer, Hero, Intro, Navbar, Pricing, Steps } from "@/components";
+import {
+  About,
+  CTA,
+  Footer,
+  Hero,
+  Intro,
+  Navbar,
+  Pricing,
+  Steps,
+} from "@/components";
 import Image from "next/image";
 
 export default function Home() {

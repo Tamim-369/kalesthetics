@@ -28,7 +28,10 @@ const Intro = () => {
   }, [inView]);
   return (
     <>
-      <section className="text-gray-300 body-font overflow-hidden">
+      <section
+        id="services"
+        className="text-gray-300 body-font overflow-hidden"
+      >
         <div className="container px-5 py-24 mx-auto">
           <motion.div
             variants={{

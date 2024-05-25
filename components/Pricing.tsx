@@ -25,44 +25,7 @@ const Pricing = () => {
               Please choose a plan to begin your journey.
             </p>
           </motion.div>
-          <div className="grid grid-cols-1 font-roboto md:grid-cols-2 lg:grid-cols-3 w-full min-[430px]:w-8/12 md:w-10/12 mx-auto gap-8">
-            {/* Free Plan */}
-            <motion.div
-              initial={{ scale: 0.8, y: 100 }}
-              whileInView={{ opacity: 1, scale: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="pricing-plan bg-backgroundUpper p-6 rounded-lg text-left"
-            >
-              <div className="mb-4">
-                <h3 className="text-xl font-semibold ">Free</h3>
-                <p className="text-sm font-medium text-gray-200 font-roboto">
-                  Perfect for basic users who just want to stay fit
-                </p>
-              </div>
-              <p className="text-3xl font-bold mb-4">
-                $0<span className="text-lg font-normal">/month</span>
-              </p>
-              <ul className="mb-8">
-                <li className="mb-2 flex justify-start my-4 items-center gap-1">
-                  <FaCheck /> <span>Basic workout plans</span>
-                </li>
-                <li className="mb-2 flex justify-start my-4 items-center gap-1">
-                  <FaCheck /> <span>Limited access to exercises</span>
-                </li>
-                <li className="mb-2 flex justify-start my-4 items-center gap-1">
-                  <FaCheck /> <span>Progress tracking</span>
-                </li>
-                <li className="flex justify-start my-4 items-center gap-1">
-                  <FaCheck /> <span>Community support</span>
-                </li>
-              </ul>
-              <a
-                href="#"
-                className="inline-block bg-emerald-600 text-white py-2 px-6 rounded-lg font-medium"
-              >
-                Get Started
-              </a>
-            </motion.div>
+          <div className="grid grid-cols-1 font-roboto md:grid-cols-2 w-full min-[430px]:w-8/12 md:w-10/12 lg:w-7/12 mx-auto gap-8">
             {/* Basic Plan */}
             <motion.div
               initial={{ scale: 0.8, y: 100 }}
@@ -93,9 +56,6 @@ const Pricing = () => {
                 </li>
                 <li className="flex justify-start my-4 items-center gap-1">
                   <FaCheck /> <span>Progress tracking</span>
-                </li>
-                <li className="flex justify-start my-4 items-center gap-1">
-                  <FaCheck /> <span>Community support</span>
                 </li>
               </ul>
               <a
@@ -141,9 +101,6 @@ const Pricing = () => {
                 </li>
                 <li className="mb-2 flex justify-start my-4 items-center gap-1">
                   <FaCheck /> <span>Chat support feedback</span>
-                </li>
-                <li className="mb-2 flex justify-start my-4 items-center gap-1">
-                  <FaCheck /> <span>Community support</span>
                 </li>
               </ul>
               <a

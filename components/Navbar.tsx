@@ -42,14 +42,24 @@ const Navbar = () => {
                 }`}
               >
                 <li role="none" className="flex items-stretch">
-                  <a
+                  <Link
                     role="menuitem"
                     aria-haspopup="false"
                     className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-white focus:text-white focus:outline-none focus-visible:outline-none "
-                    href="javascript:void(0)"
+                    href="/"
                   >
-                    <span>Features</span>
-                  </a>
+                    <span>Home</span>
+                  </Link>
+                </li>
+                <li role="none" className="flex items-stretch">
+                  <Link
+                    role="menuitem"
+                    aria-haspopup="false"
+                    className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-white focus:text-white focus:outline-none focus-visible:outline-none "
+                    href="/#services"
+                  >
+                    <span>Services</span>
+                  </Link>
                 </li>
                 <li role="none" className="flex items-stretch">
                   <Link
@@ -62,23 +72,16 @@ const Navbar = () => {
                     <span>Pricing</span>
                   </Link>
                 </li>
-                <li role="none" className="flex items-stretch">
-                  <a
-                    role="menuitem"
-                    aria-haspopup="false"
-                    className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-white focus:text-white focus:outline-none focus-visible:outline-none "
-                    href="javascript:void(0)"
-                  >
-                    <span>About</span>
-                  </a>
-                </li>
               </ul>
             </div>
 
             <div className="ml-auto flex items-center px-6 lg:ml-0 lg:p-0">
-              <button className="py-2 px-3 bg-gradient-to-bl from-emerald-600 via-[#2dc972] to-emerald-600 rounded-xl font-roboto font-medium ">
-                <span>Try it free</span>
-              </button>
+              <Link
+                href={"/auth/signup"}
+                className="py-2 px-3 bg-gradient-to-bl from-emerald-600 via-[#2dc972] to-emerald-600 rounded-xl font-roboto font-medium "
+              >
+                <span>Get Started</span>
+              </Link>
             </div>
             {/*      <!-- Mobile trigger --> */}
             <button

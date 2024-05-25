@@ -6,4 +6,5 @@ import Pricing from "./Pricing";
 import About from "./About";
 import CTA from "./CTA";
 import Footer from "./Footer";
-export { Navbar, Hero, Intro, Steps, Pricing, About, CTA, Footer };
+import Provider from "./Provider";
+export { Navbar, Hero, Intro, Steps, Pricing, About, CTA, Footer, Provider };

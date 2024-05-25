@@ -8,14 +8,13 @@ const CTA = () => {
         className="py-16 bg-backgroundUpper text-white text-center"
       >
         <div className="container mx-auto px-4 w-10/12">
-          <h2 className="text-3xl font-bold mb-4">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">
             Start Your Fitness Journey Today!
           </h2>
-          <p className="text-xl mb-8">
-            Don't wait any longer. Join Kalesthetics now and transform your
-            fitness with our AI-powered home workouts and calisthenics. Achieve
-            your goals with personalized plans, real-time feedback, and progress
-            tracking.
+          <p className="text-lg text-gray-100 sm:text-xl mb-8">
+            Join Kalesthetics now and transform your fitness with our AI-powered
+            home workouts and calisthenics. Achieve your goals with personalized
+            plans, real-time feedback, and progress tracking.
           </p>
           <a
             href="#get-started"
