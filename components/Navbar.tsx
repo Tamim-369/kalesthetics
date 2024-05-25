@@ -52,15 +52,15 @@ const Navbar = () => {
                   </a>
                 </li>
                 <li role="none" className="flex items-stretch">
-                  <a
+                  <Link
                     role="menuitem"
                     aria-current="page"
                     aria-haspopup="false"
                     className="flex items-center gap-2 py-4 text-white transition-colors duration-300 hover:text-white focus:text-white focus:outline-none focus-visible:outline-none "
-                    href="javascript:void(0)"
+                    href="/#pricing"
                   >
                     <span>Pricing</span>
-                  </a>
+                  </Link>
                 </li>
                 <li role="none" className="flex items-stretch">
                   <a

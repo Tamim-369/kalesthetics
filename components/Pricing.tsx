@@ -25,7 +25,7 @@ const Pricing = () => {
               Please choose a plan to begin your journey.
             </p>
           </motion.div>
-          <div className="grid grid-cols-1 font-roboto md:grid-cols-2 lg:grid-cols-3 w-8/12 md:w-10/12 mx-auto gap-8">
+          <div className="grid grid-cols-1 font-roboto md:grid-cols-2 lg:grid-cols-3 w-full min-[430px]:w-8/12 md:w-10/12 mx-auto gap-8">
             {/* Free Plan */}
             <motion.div
               initial={{ scale: 0.8, y: 100 }}
@@ -58,7 +58,7 @@ const Pricing = () => {
               </ul>
               <a
                 href="#"
-                className="inline-block bg-emerald-600 text-white py-2 px-6 rounded-lg font-semibold"
+                className="inline-block bg-emerald-600 text-white py-2 px-6 rounded-lg font-medium"
               >
                 Get Started
               </a>
@@ -66,9 +66,9 @@ const Pricing = () => {
             {/* Basic Plan */}
             <motion.div
               initial={{ scale: 0.8, y: 100 }}
-              whileInView={{ opacity: 1, scale: 1, y: 0 }}
+              whileInView={{ opacity: 1, scale: 1.05, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="pricing-plan scale-105 z-0 border-2 border-emerald-600 bg-backgroundUpper p-6 rounded-lg text-left"
+              className="pricing-plan  z-0 border-2 border-emerald-600 bg-backgroundUpper p-6 rounded-lg text-left"
             >
               <div className="mb-4">
                 <h3 className="text-xl font-semibold ">Basic</h3>
@@ -100,7 +100,7 @@ const Pricing = () => {
               </ul>
               <a
                 href="#"
-                className="inline-block bg-emerald-600 text-white py-2 px-6 rounded-lg font-semibold"
+                className="inline-block bg-emerald-600 text-white py-2 px-6 rounded-lg font-medium"
               >
                 Get Started
               </a>
@@ -148,7 +148,7 @@ const Pricing = () => {
               </ul>
               <a
                 href="#"
-                className="inline-block bg-emerald-600 text-white py-2 px-6 rounded-lg font-semibold"
+                className="inline-block bg-emerald-600 text-white py-2 px-6 rounded-lg font-medium"
               >
                 Get Started
               </a>

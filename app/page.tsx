@@ -1,4 +1,4 @@
-import { About, Hero, Intro, Navbar, Pricing, Steps } from "@/components";
+import { CTA, Footer, Hero, Intro, Navbar, Pricing, Steps } from "@/components";
 import Image from "next/image";
 
 export default function Home() {
@@ -9,7 +9,8 @@ export default function Home() {
       <Intro />
       <Steps />
       <Pricing />
-      <About />
+      <CTA />
+      <Footer />
     </>
   );
 }

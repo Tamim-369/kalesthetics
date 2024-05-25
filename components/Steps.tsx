@@ -43,7 +43,7 @@ const Steps = () => {
               Here are the steps you need to follow to get started.
             </p>
           </motion.div>
-
+          {/* <div className="p-1 border-b-2 relative   border-emerald-600 w-[70dvw] mx-auto left-0 right-0 top-0 bottom-0 z-30 flex justify-center items-center" /> */}
           <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8">
             <motion.div
               variants={{
